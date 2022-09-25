@@ -1,8 +1,7 @@
 // https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm#Rust
 mod tests;
 
-#[derive(Debug, PartialEq, Clone)]
-pub struct Point(pub isize, pub isize);
+pub type Point = (isize, isize);
 
 pub struct Bresenham {
     end: Point,
@@ -67,6 +66,6 @@ impl Iterator for Bresenham {
             self.current_y += self.sy;
         }
 
-        Some(Point(self.current_x, self.current_y))
+        Some((self.current_x, self.current_y))
     }
 }
