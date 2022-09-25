@@ -2,9 +2,9 @@
 mod tests;
 
 #[derive(Debug, PartialEq, Clone)]
-struct Point(isize, isize);
+pub struct Point(isize, isize);
 
-struct Bresenham {
+pub struct Bresenham {
     end: Point,
     current_x: isize,
     current_y: isize,
