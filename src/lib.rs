@@ -51,10 +51,6 @@ impl Iterator for Bresenham {
     type Item = Point;
 
     fn next(&mut self) -> Option<Self::Item> {
-        if self.current_x == self.end.0 && self.current_y == self.end.1 {
-            return None;
-        }
-
         let error2 = self.error;
 
         if error2 > -self.dx {
@@ -64,6 +60,10 @@ impl Iterator for Bresenham {
         if error2 < self.dy {
             self.error += self.dx;
             self.current_y += self.sy;
+        }
+
+        if self.current_x == self.end.0 && self.current_y == self.end.1 {
+            return None;
         }
 
         Some((self.current_x, self.current_y))

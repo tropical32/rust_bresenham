@@ -14,7 +14,6 @@
       // (2, 4)
       // (2, 5)
       // (3, 6)
-      // (3, 7)
     }
 
 ## Get all points
@@ -24,4 +23,4 @@
     let points = Bresenham::new(Point(3, 7), Point(1, 1)).collect();
 
     println!("points = {:?}", points);
-    // points = [(1, 2), (2, 3), (2, 4), (2, 5), (3, 6), (3, 7)]
+    // points = [(1, 2), (2, 3), (2, 4), (2, 5), (3, 6)]

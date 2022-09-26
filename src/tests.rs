@@ -9,8 +9,7 @@ mod tests {
         let points2: Vec<Point> = Bresenham::new((3, 7), (1, 1)).collect();
 
         assert_eq!(points.len(), points2.len());
-
-        assert_eq!(points.contains(&(3, 7)), true);
+        assert_eq!(points.len(), 5);
 
         assert_eq!(points.contains(&(3, 6)), true);
         assert_eq!(points2.contains(&(3, 6)), true);
@@ -26,7 +25,5 @@ mod tests {
 
         assert_eq!(points.contains(&(1, 2)), true);
         assert_eq!(points2.contains(&(1, 2)), true);
-
-        assert_eq!(points2.contains(&(1, 1)), true);
     }
 }
