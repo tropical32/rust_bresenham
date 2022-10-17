@@ -11,19 +11,19 @@ mod tests {
         assert_eq!(points.len(), points2.len());
         assert_eq!(points.len(), 5);
 
-        assert_eq!(points.contains(&(3, 6)), true);
-        assert_eq!(points2.contains(&(3, 6)), true);
+        assert!(points.contains(&(3, 6)));
+        assert!(points2.contains(&(3, 6)));
 
-        assert_eq!(points.contains(&(2, 5)), true);
-        assert_eq!(points2.contains(&(2, 5)), true);
+        assert!(points.contains(&(2, 5)));
+        assert!(points2.contains(&(2, 5)));
 
-        assert_eq!(points.contains(&(2, 4)), true);
-        assert_eq!(points2.contains(&(2, 4)), true);
+        assert!(points.contains(&(2, 4)));
+        assert!(points2.contains(&(2, 4)));
 
-        assert_eq!(points.contains(&(2, 3)), true);
-        assert_eq!(points2.contains(&(2, 3)), true);
+        assert!(points.contains(&(2, 3)));
+        assert!(points2.contains(&(2, 3)));
 
-        assert_eq!(points.contains(&(1, 2)), true);
-        assert_eq!(points2.contains(&(1, 2)), true);
+        assert!(points.contains(&(1, 2)));
+        assert!(points2.contains(&(1, 2)));
     }
 }
