@@ -28,5 +28,5 @@
         let points: Vec<_> = Bresenham::new((3, 7), (1, 1)).collect();
 
         println!("points = {:?}", points);
-        // points = [(1, 2), (2, 3), (2, 4), (2, 5), (3, 6)]
+        // points = [(3, 6), (2, 5), (2, 4), (2, 3), (1, 2)]
     }
