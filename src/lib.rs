@@ -35,7 +35,7 @@ impl Bresenham {
         };
 
         Self {
-            end: end.clone(),
+            end,
             current_x: start.0,
             current_y: start.1,
             dx,
